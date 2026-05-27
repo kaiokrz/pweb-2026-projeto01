@@ -1,11 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Elenco</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="page" id="sobre">
+  <div class="sobre-wrap">
+
+    <p class="section-label" style="margin-bottom:1.5rem;">Sobre este site</p>
+    <h2 class="sobre-hero-text">
+      Um tributo ao<br><em>éter</em> de Lily.
+    </h2>
+
+    <div class="about-block">
+      <h3>📽 Sobre o projeto</h3>
+      <p style="margin:0;font-size:.9rem;line-height:1.9;">
+        Este site foi criado como um espaço dedicado ao filme <em style="color:var(--accent)">All About Lily Chou-Chou</em>
+        (リリィ・シュシュのすべて, 2001), do diretor japonês Shunji Iwai. O objetivo é apresentar
+        a obra para novos espectadores e oferecer informações sobre seu elenco, contexto histórico
+        e impacto cultural. O site é puramente informativo e sem fins lucrativos.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Fan Site</span>
+        <span class="tag">Sem fins lucrativos</span>
+        <span class="tag">Cinema Japonês</span>
+        <span class="tag">Educacional</span>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h3>🛠 Tecnologias utilizadas</h3>
+      <p style="margin:0;font-size:.9rem;line-height:1.9;">
+        Site construído utilizando <strong>Django</strong> para o roteamento e arquitetura baseada em templates. No front-end, utilizamos HTML5, CSS3 e referências ao ambiente digital dos anos 2000 que permeiam a narrativa do próprio filme.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Django</span>
+        <span class="tag">Python</span>
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h3>👤 Autores</h3>
+      <p style="margin:0;font-size:.9rem;line-height:1.9;">
+        Site desenvolvido por <strong>Kaio</strong> e <strong>Álvaro</strong>, alunos do curso técnico em <strong>Informática para Internet</strong> no <strong>IFSPP</strong> (Campus São Paulo do Potengi). Este projeto reflete a aplicação prática de conceitos de desenvolvimento web integrados ao framework Django, unindo tecnologia e apreciação cinematográfica.
+      </p>
+      <div class="tag-row">
+        <span class="tag">Kaio</span>
+        <span class="tag">Álvaro</span>
+        <span class="tag">Informática para Internet</span>
+        <span class="tag">IFSPP</span>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h3>⚠ Direitos autorais e isenção</h3>
+      <p style="margin:0;font-size:.9rem;line-height:1.9;">
+        <em style="color:var(--gold)">All About Lily Chou-Chou</em> (リリィ・シュシュのすべて) é propriedade intelectual
+        de Shunji Iwai, Rockwell Eyes e demais detentores de direitos. Este site não possui
+        afiliação oficial com nenhuma das partes. Nenhuma cópia do filme é distribuída aqui.
+        Todo conteúdo audiovisual referenciado pertence aos seus respectivos proprietários.
+      </p>
+      <div class="tag-row">
+        <span class="tag">© Shunji Iwai 2001</span>
+        <span class="tag">© Rockwell Eyes</span>
+        <span class="tag">Uso Educacional</span>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h3>🌐 Contato & Feedback</h3>
+      <p style="margin:0;font-size:.9rem;line-height:1.9;">
+        Para sugestões, correções ou colaborações, entre em contato pelo endereço de e-mail
+        acadêmico informado pelos responsáveis pelo projeto no IFSPP.
+        Apreciamos qualquer feedback construtivo sobre o conteúdo apresentado.
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

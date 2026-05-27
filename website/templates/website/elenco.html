@@ -1,11 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Sobre</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="page" id="elenco">
+  <div class="cast-header">
+    <p class="section-label">Personagens & Intérpretes</p>
+    <h2 class="section-title">Elenco Principal</h2>
+    <div class="divider"></div>
+    <p style="max-width:580px;">O filme contou com uma mistura de atores estabelecidos e estreantes,
+      muitos dos quais eram adolescentes reais quando filmaram — o que confere à obra
+      uma autenticidade raramente alcançada no cinema.</p>
+  </div>
+
+  <div class="cast-grid">
+    <div class="cast-card">
+      <div class="cast-card-img-placeholder"><img src="{% static 'yuichi.jpg' %}" alt="Yuichi"></div>
+      <div class="cast-card-body">
+        <div class="cast-role">Protagonista</div>
+        <div class="cast-name">Hayato Ichihara</div>
+        <div class="cast-meta">
+          <span>Yūichi Hasumi</span>
+          <span>Nascido em 1987, Tóquio, Japão</span>
+          <span>Estreou no cinema com este filme</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cast-card">
+      <div class="cast-card-img-placeholder"><img src="{% static 'shugo.jpg' %}" alt="Shugo"></div>
+      <div class="cast-card-body">
+        <div class="cast-role">Antagonista</div>
+        <div class="cast-name">Shugo Oshinari</div>
+        <div class="cast-meta">
+          <span>Shusuke Hoshino</span>
+          <span>Nascido em 1983, Kanagawa, Japão</span>
+          <span>Ator / Modelo</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cast-card">
+      <div class="cast-card-img-placeholder"><img src="{% static 'tsuda.jpg' %}" alt="Tsuda"></div>
+      <div class="cast-card-body">
+        <div class="cast-role">Personagem feminina central</div>
+        <div class="cast-name">Ayumi Ito</div>
+        <div class="cast-meta">
+          <span>Shiori Tsuda</span>
+          <span>Nascida em 1985, Osaka, Japão</span>
+          <span>Atriz e cantora</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cast-card">
+      <div class="cast-card-img-placeholder"><img src="{% static 'voz.jpg' %}" alt="Lily Chou-Chou"></div>
+      <div class="cast-card-body">
+        <div class="cast-role">Lily Chou-Chou (voz)</div>
+        <div class="cast-name">Salyu</div>
+        <div class="cast-meta">
+          <span>A cantora fictícia do filme</span>
+          <span>Nascida em 1983, Hokkaidō, Japão</span>
+          <span>Cantora / Compositora</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cast-card">
+      <div class="cast-card-img-placeholder"><img src="{% static 'ichikawa.jpg' %}" alt="Ichikawa"></div>
+      <div class="cast-card-body">
+        <div class="cast-role">Colega de escola</div>
+        <div class="cast-name">Miwako Ichikawa</div>
+        <div class="cast-meta">
+          <span>Chie Moritaka / Classmate</span>
+          <span>Nascida em 1989, Saitama, Japão</span>
+          <span>Atriz de TV e cinema</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cast-card">
+      <div class="cast-card-img-placeholder"><img src="{% static 'kuno.jpg' %}" alt="Kuno"></div>
+      <div class="cast-card-body">
+        <div class="cast-role">Colega vítima de bullying</div>
+        <div class="cast-name">Izumi Inamori</div>
+        <div class="cast-meta">
+          <span>Kuno Yukawa</span>
+          <span>Nascida em 1977, Aichi, Japão</span>
+          <span>Atriz e modelo</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,11 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto</title>
-</head>
-<body>
-    <h1>Projeto</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="page" id="inicio">
+
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="kanji-float">曖</div>
+    <div class="kanji-float">霧</div>
+    <div class="kanji-float">哀</div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">岩井俊二 — Shunji Iwai, 2001</p>
+      <h1 class="hero-title">
+        All About<br><em>Lily Chou-Chou</em>
+      </h1>
+      <p class="hero-sub">リリィ・シュシュのすべて</p>
+      <span class="hero-year">JAPÃO &nbsp;·&nbsp; 2001 &nbsp;·&nbsp; 146 MIN</span>
+    </div>
+
+    <div class="scroll-hint">role para baixo</div>
+  </div>
+
+  <section>
+    <p class="section-label">Sinopse</p>
+    <h2 class="section-title">O éter e o caos<br>da adolescência japonesa</h2>
+    <div class="divider"></div>
+
+    <p>
+      <em class="text-accent">All About Lily Chou-Chou</em> é um drama japonês de 2001 dirigido por
+      <strong style="color:var(--white)">Shunji Iwai</strong>, considerado um dos filmes mais
+      impactantes e perturbadores já feitos sobre a adolescência. A narrativa segue
+      Yūichi Hasumi, um jovem obcecado pela cantora fictícia Lily Chou-Chou, cuja música
+      representa para ele um refúgio — o "éter" — de uma realidade cruel.
+    </p>
+    <p>
+      O filme entrelaça dois planos: o mundo online, onde jovens anônimos discutem
+      apaixonadamente a música de Lily em fóruns da internet, e o mundo físico, onde
+      os mesmos jovens enfrentam bullying, violência, abuso e perda de identidade.
+      O contraste entre a beleza transcendente da música e a brutalidade cotidiana é
+      o coração pulsante da obra.
+    </p>
+
+    <div class="blockquote">
+      "O éter é o lugar onde a alma de Lily habita. Quando ouço a música dela, sinto
+      que estou entrando em contato com algo puro, algo que o mundo físico nunca pode tocar."
+      <cite>— Yūichi Hasumi (personagem do filme)</cite>
+    </div>
+
+    <p>
+      Filmado com uma estética quase documental, utilizando câmera na mão em muitas
+      cenas, o filme tem uma fotografia deslumbrante dos campos de arroz do interior
+      japonês como contraponto visual à violência urbana. A trilha sonora, com
+      composições atribuídas à fictícia Lily Chou-Chou mas criadas pelo músico
+      Salyu, é inseparável da experiência do filme.
+    </p>
+  </section>
+
+  <div style="max-width:1100px;margin:0 auto;padding:0 2rem;">
+    <div class="info-grid">
+      <div class="info-cell">
+        <div class="info-cell-label">Título original</div>
+        <div class="info-cell-value">リリィ・シュシュのすべて</div>
+      </div>
+      <div class="info-cell">
+        <div class="info-cell-label">Diretor</div>
+        <div class="info-cell-value">Shunji Iwai</div>
+      </div>
+      <div class="info-cell">
+        <div class="info-cell-label">Ano / País</div>
+        <div class="info-cell-value">2001 — Japão</div>
+      </div>
+      <div class="info-cell">
+        <div class="info-cell-label">Duração</div>
+        <div class="info-cell-value">146 minutos</div>
+      </div>
+      <div class="info-cell">
+        <div class="info-cell-label">Gênero</div>
+        <div class="info-cell-value">Drama / Coming-of-age</div>
+      </div>
+      <div class="info-cell">
+        <div class="info-cell-label">Fotografia</div>
+        <div class="info-cell-value">Noboru Shinoda</div>
+      </div>
+      <div class="info-cell">
+        <div class="info-cell-label">Trilha sonora</div>
+        <div class="info-cell-value">Salyu (como "Lily Chou-Chou")</div>
+      </div>
+      <div class="info-cell">
+        <div class="info-cell-label">Distribuidora</div>
+        <div class="info-cell-value">Rockwell Eyes / Kadokawa</div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <p class="section-label">Contexto e Legado</p>
+    <h2 class="section-title">Uma obra nascida<br>da internet</h2>
+    <div class="divider"></div>
+
+    <p>
+      O filme teve uma origem inusitada: Iwai começou publicando um romance em
+      partes em um fórum online japonês, onde os próprios leitores comentavam
+      e ajudavam a moldar a narrativa — uma experiência coletiva e anônima que
+      inspirou diretamente a estrutura do filme, onde os personagens se comunicam
+      por mensagens de texto e posts em fansite.
+    </p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">1999</div>
+        <div class="timeline-text">Iwai começa a publicar o romance em fórum online, sob pseudônimo, sem revelar que era um diretor famoso. Os leitores interagem genuinamente.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2000</div>
+        <div class="timeline-text">Início das filmagens. Muitas cenas são improvisadas com atores não profissionais. A cantora Salyu é descoberta e escalada para criar a voz de Lily Chou-Chou.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2001</div>
+        <div class="timeline-text">Lançamento do filme e do romance publicado. O álbum de Lily Chou-Chou "Lilie" é lançado concomitantemente, tratado como se fosse de uma artista real.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2001–hoje</div>
+        <div class="timeline-text">O filme ganha culto internacional. É constantemente citado em discussões sobre cinema asiático, adolescência, internet e música. Influenciou gerações de cineastas.</div>
+      </div>
+    </div>
+
+    <p>
+      Décadas depois de seu lançamento, <em class="text-accent">All About Lily Chou-Chou</em>
+      permanece como um documento único: uma obra que capturou com precisão dolorosa
+      a solidão digital, o bullying escolar e a busca por identidade — temas que
+      se tornaram ainda mais universais com o passar do tempo.
+    </p>
+  </section>
+</div>
+{% endblock %}
